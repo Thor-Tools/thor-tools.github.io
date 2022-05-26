@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ThorX-DAO'`, () => {
+  it(`should have as title 'ThorX DAO'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ThorX-DAO');
+    expect(app.title).toEqual('ThorX DAO');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('ThorX-DAO app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('ThorX DAO app is running!');
   });
 });
